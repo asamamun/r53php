@@ -1,0 +1,5 @@
+
+https://medium.com/@abhinavsinha_/setting-up-visual-studio-code-for-c-c-on-windows-d02ede716280
+
+
+https://www.javatpoint.com/how-to-run-a-c-program-in-visual-studio-code
