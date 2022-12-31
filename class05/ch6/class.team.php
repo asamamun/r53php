@@ -22,7 +22,8 @@ class Team{
         foreach ($this->players as $player) {
            $html .= "<li>$player</li>";
         }
-        $html .= "</fieldset>";
+        $html .= "</fieldset><br>";
         return $html;
     }
+
 }
