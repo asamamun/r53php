@@ -1,0 +1,109 @@
+Describe Questions 
+
+1.	Which of the flowing algorithm for encryption?
+		Ans. 	
+•	Blowfish
+•	MD5
+•	SHA1 
+•	and TripleDES 
+
+2.	What are the practically capability?
+Ans. 
+•	No need include with library
+•	Ability to nested function 
+•	Loosely type language 
+•	Automatically destroy variable when script completed 
+
+3.	What are the general features of PHP 5?
+Ans. 
+•	Vastly improved object oriented capabilities 
+•	Try/catch exception handling
+•	Improved string handling
+•	Improved XML and Web Services support
+•	Native support for SQLit 
+
+4.	Write down the feature’s of PHP 4.0?
+Ans. 
+•	Improved 
+•	resource handling
+•	Object oriented support
+•	Native session-handling support
+•	Encryption
+•	ISAPI support
+•	Native COM/DCOM support
+•	Native Java support
+•	Perl Compatible Regular Expressions (PCRE) Library  
+
+5.	What are the drawbacks for PHP 4.0
+	Ans. 	
+•	PHP 4.0 is not Object oriented language.
+•	Try/ catch exception handling does not support.   
+
+6.	Which of the object oriented feature in PHP 5.0?
+Ans.
+•	Constrictor and deconstructed
+•	Object cloning
+•	Abstraction 
+•	Variable scope 
+•	Interface  
+
+7.	Difference between echo and print?
+Ans. 
+•	Echo is faster than print 
+•	Echo returns void but prints returns Boolean.
+•	Echo is capable of outputting multiple strings but print is single string. 
+
+
+8.	What is type casting? 
+	Ans. forcing a variable to behave as a type other than the one originally intended for it is known as type casting.
+
+9.	There are how many types of format which are?
+Ans. 
+•	Padding specifier
+•	Alignment specifier
+•	Width specifier
+•	Precision specifier
+•	Type specifier
+
+10.	What is Type Juggling? 
+Ans. variables are some time automatically cast to best fit the circumstances is known as Type Juggling.
+
+11.	Deference between print & printf.
+Ans. 
+•	Print is unable to format
+•	Printf is represents to format
+
+12.	Deference between sprintf & printf.
+Ans. 
+•	Sprintf returns string
+•	Printf returns Boolean
+
+13.	What is the Identifiers? 
+Ans. Identifier is a general tern applied to variables, functions, and various other user-defined objects. 
+
+14.	What is the variable? 
+Ans. Variable is a named memory location that contains data and manipulated throughout the execution of the program
+
+15.	In PHP data types are broken how many categories? 
+Ans.  3
+•	Scalar
+•	Compound
+•	Special
+16.	What is the gettype ( )? 
+Ans. The gettype() function returns the type of the variable specified by var.
+
+17.	What is the settype ( )? 
+Ans. The settype() function convention a variable, specified by var, to the type specified by type.
+
+18.	Define deference between local variable, local global and super global 
+Ans. 
+•	A variable declared in a function is considered local.  
+•	A global variable can be accessed in any part of the program.
+•	Super global variable is 
+•	built in variable of PHP
+
+19.	What is static variable?
+Ans. The final type of variable scoping to discuses is known as static. 
+
+20.	What is function parameter?
+Ans. when we want to a value for passing in a function then we need a variable to keep the value which variable is called function parameter. 

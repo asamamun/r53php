@@ -1,0 +1,76 @@
+﻿1. how to use crop tool
+2. gradient in ps
+3. clone stamp tool
+4. magic wand tool
+
+5. what is bootstrap
+6. advantages of bs
+7. key components of bs
+8. bs collapse element
+9. modal plugin in bs
+
+10. general features of php
+11. type casting
+12. get and post method diff
+13. superglobal variable
+14. grid in bs
+15. functions of phpinfo()
+
+<hr>
+<h2>Exam Question no. 1</h2>
+
+<?php
+$secretNumber = 453;
+$_POST['guess'] = 442;
+if ($_POST['guess'] == $secretNumber) {
+echo "<p>Congratulations!</p>";
+} elseif ((300 - $secretNumber) < 10) {
+echo "<p>You're getting close!</p>";
+} else {
+echo "<p>Sorry!</p>";
+}
+?>
+
+
+
+
+<hr>
+<h2>Exam Question no. 2</h2>
+
+<?php
+$value = 1;
+do {
+	$count = 3;
+	$value = $value + 2;
+	$value = $value * $count;	
+} while ($count >= 12);
+echo "Value =$value";
+?>
+
+
+
+
+
+
+<hr>
+<h2>Exam Question no. 3</h2>
+
+<?php
+$treat = true;
+if(!($treat)){ 
+echo "Treated";
+}
+Else{
+	echo "Not Treated";
+	}
+?>
+
+
+mcq: gettype()
+large submission of form method: post
+
+
+correct variable scope in php. ans: all of the above
+
+
+
