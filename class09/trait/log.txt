@@ -1,0 +1,16 @@
+testing traits from class A
+testing traits from class B
+testing traits from class A
+testing traits from class B
+testing traits from class A
+testing traits from class B
+testing traits from class A
+testing traits from class B
+testing traits from class A
+testing traits from class B
+2023-01-04 18:43:08 pm:testing traits from class A
+2023-01-04 18:43:08 pm:testing traits from class B
+2023-01-04 18:43:10 pm:testing traits from class A
+2023-01-04 18:43:10 pm:testing traits from class B
+2023-01-04 18:43:11 pm:testing traits from class A
+2023-01-04 18:43:11 pm:testing traits from class B

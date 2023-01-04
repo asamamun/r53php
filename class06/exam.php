@@ -18,6 +18,10 @@ do {
 	$value = $value * $count;//	9
 } while ($count >= 12);
 echo "Value =$value";
-var_dump($_ENV)
+var_dump($_ENV);
+function myfunc(){}
+// function($myFunction) { }
+// function myFunction($arg1, $arg2);
+strlen("abc")
 ?>
 
