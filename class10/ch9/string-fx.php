@@ -31,8 +31,6 @@ callback_array(), and *preg_split().</li>
 <li>*str_pad</li>
 <li>*count_chars</li>
 <li>str_word_count</li>
-
-
-    </ul>
+</ul>
 </body>
 </html>
