@@ -1,0 +1,12 @@
+Microsoft Windows [Version 10.0.19044.2364]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\wkhtmltopdf\bin>C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe https://www.prothomalo.com/ f:/palo.pdf
+Loading pages (1/6)
+Counting pages (2/6)
+Resolving links (4/6)
+Loading headers and footers (5/6)
+Printing pages (6/6)
+Done
+
+C:\Program Files\wkhtmltopdf\bin>
