@@ -1,0 +1,19 @@
+{
+    "name": "wdpf/rss-parser",
+    "description": "testing RSS read project",
+    "type": "project",
+    "require": {
+        "simplepie/simplepie": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wdpf\\RssParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "asamamun",
+            "email": "asamamun.web@gmail.com"
+        }
+    ]
+}
