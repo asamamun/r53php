@@ -1,0 +1,6 @@
+1 . Write a program in PHP which will validate a login registration system using form  
+ User name must be between 4 to 8 digit  must be ‘@’ symbol - 12
+2. Create a class named student where fields are id, name, batch and one method result which will take id as parameter and search the corresponding result from a file and print result. Must use constructor to initialize the data and print a result.  - 13
+3. Create a PHP script to upload a particular type of file to the server and limit the file size to 400 KB (File type can be PDF/IMAGE/Document file).  	- 10
+4. Find out prime number  		- 10
+5. Oral					- 5

@@ -1,0 +1,252 @@
+
+Setting environment for using XAMPP for Windows.
+WDPF@DESKTOP-43SRMLA d:\xampp8110
+# source D:/xampp8110/htdocs/Round53/php/r53php/class17MYSQL/sakila/sakila-schema.sql
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+WDPF@DESKTOP-43SRMLA d:\xampp8110
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 268
+Server version: 10.4.25-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> source D:/xampp8110/htdocs/Round53/php/r53php/class17MYSQL/sakila/sakila-schema.sql
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.034 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected, 1 warning (0.001 sec)
+
+Query OK, 1 row affected (0.002 sec)
+
+Database changed
+Query OK, 0 rows affected (0.185 sec)
+
+Query OK, 0 rows affected (0.331 sec)
+
+Query OK, 0 rows affected (0.206 sec)
+
+Query OK, 0 rows affected (0.172 sec)
+
+Query OK, 0 rows affected (0.147 sec)
+
+Query OK, 0 rows affected (0.198 sec)
+
+Query OK, 0 rows affected (0.564 sec)
+
+Query OK, 0 rows affected (0.139 sec)
+
+Query OK, 0 rows affected (0.239 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.001 sec)
+
+Query OK, 0 rows affected (1.741 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.090 sec)
+
+Query OK, 0 rows affected (0.078 sec)
+
+Query OK, 0 rows affected (0.072 sec)
+
+Query OK, 0 rows affected (0.205 sec)
+
+Query OK, 0 rows affected (0.195 sec)
+
+Query OK, 0 rows affected (0.181 sec)
+
+Query OK, 0 rows affected (0.173 sec)
+
+Query OK, 0 rows affected (0.242 sec)
+
+Query OK, 0 rows affected (0.189 sec)
+
+Query OK, 0 rows affected (0.049 sec)
+
+Query OK, 0 rows affected (0.049 sec)
+
+Query OK, 0 rows affected (0.020 sec)
+
+Query OK, 0 rows affected (0.022 sec)
+
+Query OK, 0 rows affected (0.023 sec)
+
+Query OK, 0 rows affected (0.025 sec)
+
+Query OK, 0 rows affected (0.020 sec)
+
+Query OK, 0 rows affected, 1 warning (0.079 sec)
+
+Query OK, 0 rows affected (0.081 sec)
+
+Query OK, 0 rows affected, 1 warning (0.073 sec)
+
+Query OK, 0 rows affected, 1 warning (0.188 sec)
+
+Query OK, 0 rows affected (0.254 sec)
+
+Query OK, 0 rows affected (0.156 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.014 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [sakila]> source D:/xampp8110/htdocs/Round53/php/r53php/class17MYSQL/sakila/sakila-data.sql
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Database changed
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 200 rows affected (0.066 sec)
+Records: 200  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.047 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 603 rows affected (0.040 sec)
+Records: 603  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.021 sec)
+
+Query OK, 0 rows affected (0.001 sec)
+
+Query OK, 16 rows affected (0.011 sec)
+Records: 16  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.060 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 600 rows affected (0.057 sec)
+Records: 600  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.027 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 109 rows affected (0.030 sec)
+Records: 109  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.023 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 599 rows affected (0.169 sec)
+Records: 599  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.064 sec)
+
+Query OK, 0 rows affected (0.037 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 1000 rows affected (0.360 sec)
+Records: 1000  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.067 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 5462 rows affected (0.229 sec)
+Records: 5462  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.022 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 1000 rows affected (0.082 sec)
+Records: 1000  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.019 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 4581 rows affected (0.308 sec)
+Records: 4581  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.023 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 6 rows affected (0.001 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.040 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 14881 rows affected (1.908 sec)
+Records: 14881  Duplicates: 0  Warnings: 0
+
+Query OK, 1163 rows affected (0.014 sec)
+Records: 1163  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.025 sec)
+
+Query OK, 0 rows affected (0.075 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 12377 rows affected (1.528 sec)
+Records: 12377  Duplicates: 0  Warnings: 0
+
+Query OK, 3667 rows affected (0.195 sec)
+Records: 3667  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.031 sec)
+
+Query OK, 0 rows affected (0.058 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.006 sec)
+
+Query OK, 2 rows affected (0.032 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.029 sec)
+
+Query OK, 0 rows affected (0.001 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 2 rows affected (0.026 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.025 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [sakila]>

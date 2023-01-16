@@ -1,0 +1,162 @@
+/* 
+===========================
+        Reset css 
+=========================== 
+
+*/
+*,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+body {
+  /* background-color: #ddd; */
+  background-image: linear-gradient(
+    to right,
+    #baf3d7,
+    #c2f5de,
+    #cbf7e4,
+    #d4f8ea,
+    #ddfaef
+  );
+  font-size: 16px;
+}
+
+/* 
+===========================
+        Navbar css 
+=========================== 
+
+*/
+
+a.navbar-brand {
+  width: 80px;
+}
+.logoName{
+  color: #009d63 !important;
+  font-family: 'Pacifico', cursive;
+}
+
+/* 
+===========================
+        Carousel css 
+=========================== 
+
+*/
+
+.carousel-item {
+  height: 500px;
+}
+.carousel-item img {
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* 
+===========================
+        Gallery css 
+=========================== 
+
+*/
+.gallery-heading{
+  color: #009d63 !important;
+  font-family: 'Pacifico', cursive;
+}
+
+
+.single-image {
+  height: 250px;
+  max-width: 350px;
+  border: 10px solid #fff;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.single-image img{
+        object-fit: cover;
+        transition: .5s;
+}
+.single-image:hover img{
+        transform: scale(1.2);
+}
+.delete-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.delete-btn i{
+  color: #DC3545;
+  font-size: 22px;
+}
+/* 
+===========================
+        Login css 
+=========================== 
+
+*/
+
+.form-area{
+        width: 550px;
+        background-color: #fff;
+        padding: 30px;
+        margin: 40px auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+
+}
+
+/* 
+===========================
+        footer css 
+=========================== 
+
+*/
+footer{
+  background-color: #009d63;
+  font-family: 'Pacifico', cursive;
+}
+/* 
+===========================
+        Register css 
+=========================== 
+
+*/
+.errmsg{
+  list-style: none;
+}
+.errmsg li {
+  color: red;
+}
+/* 
+===========================
+        Pagination css 
+=========================== 
+
+*/
+
+.page-link{
+  color: #009d63 !important;;
+}
+.page-link.active{
+  background-color: #009d63 !important;
+  border-color: #009d63 !important;
+  color: #fff !important;
+}
+/* 
+
+
+@media (max-width: 768px) {
+.single-image{
+  margin: 0 auto;
+}
+}

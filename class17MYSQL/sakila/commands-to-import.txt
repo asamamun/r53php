@@ -1,0 +1,9 @@
+
+mysql -u root -p enter
+enter
+
+mysql> SOURCE C:/temp/sakila-db/sakila-schema.sql;
+mysql> SOURCE C:/temp/sakila-db/sakila-data.sql;
+
+source D:/xampp8110/htdocs/Round53/php/r53php/class17MYSQL/sakila/sakila-schema.sql
+source D:/xampp8110/htdocs/Round53/php/r53php/class17MYSQL/sakila/sakila-data.sql
