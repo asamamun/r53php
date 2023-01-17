@@ -1,0 +1,82 @@
+------------ch23--------------
+mysql -u root -p enter
+enter
+MariaDB [(none)]> show variables;
+MariaDB [(none)]> show status;
+MariaDB [(none)]> show databases;
+MariaDB [(none)]> create database test3;
+MariaDB [(none)]> use sakila;
+MariaDB [sakila]> show tables;
+MariaDB [sakila]> describe actor; //will show the design view of table
+-------------ch24------------
+//select command
+MariaDB [sakila]>select * from actor;
+MariaDB [sakila]>select actor_id , first_name from actor;
+MariaDB [sakila]>select * from actor where actor_id=50;
+MariaDB [sakila]>select * from actor where actor_id < 50;
+MariaDB [sakila]>select * from actor where first_name="LISA";
+###################SELECT###################    
+//show all film records
+select * from film;
+select * from film\G;
+//show all film with rating "G"
+select * from film whare rating="G";
+//show all film with length more than 120 minutes
+select * from film where length >120;
+//show all film with rating "R" and length more than 120 minutes
+select * from film where rating="R" and length>120;
+//show only film id,title and replacement cost  where replacement_cost is less than 20.00
+select film_id , title , replacement_cost from film where replacement_cost < 20;
+// show all films with rental_rate is greater than or equal to 3.00
+select * from film where rental_rate >= 3;
+###################INSERT###################
+//insert into tablename values(fieldvalue1,fieldvalue2,....,fieldvaluen);
+insert into actor values(null,"Hero","Alam",current_timestamp())
+insert into actor values(null,"Anju","Ghosh",current_timestamp())
+insert into category values(null,"Education",current_timestamp())
+###################UPDATE###################
+// update tablename set fieldname=newvalue,fieldname2=newvalue,....,fieldnamen=newvalue where fieldname=value
+update actor set last_name="Alom" where actor_id=201;
+update actor set first_name = "Shakib",last_name="Khan" where actor_id=203;
+update film set release_year="2009" where film_id=1;
+update film set release_year="2023" where release_year="2006";
+###################DELETE###################
+//delete from tablename where fieldname=value;
+delete from actor; //disaster
+delete from actor where actor_id="201"
+//SELECT DISTINCT
+select rating from film;
+select distinct rating from film;
+select distinct release_year from film;
+//ORDER BY
+select title, length from film;
+select title, length from film order by length;
+select title, length from film order by length limit 1;
+select title, length from film order by length limit 5;
+select title, length from film order by length desc limit 5;
+//GROUP BY
+select count(*) from film;
+select count(*), rating from film group by rating;
+select count(*) as total, rating from film group by rating;
+
+select customer_id, sum(amount) from payment where customer_id=1;
+select customer_id, sum(amount) from payment where 1 group by customer_id;
+select customer_id, sum(amount) as total from payment where 1 group by customer_id order by total desc;
+
+HOME WORK:
+https://www.w3schools.com/sql/sql_top.asp
+https://www.w3schools.com/sql/sql_min_max.asp
+https://www.w3schools.com/sql/sql_count_avg_sum.asp
+https://www.w3schools.com/sql/sql_like.asp
+
+
+
+
+
+
+
+
+
+
+
+
