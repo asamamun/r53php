@@ -70,13 +70,39 @@ https://www.w3schools.com/sql/sql_count_avg_sum.asp
 https://www.w3schools.com/sql/sql_like.asp
 
 
+//CREATE table
+CREATE TABLE ISAMEXAMPLE (
+ id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+ username VARCHAR(15) NOT NULL,
+ pswd VARCHAR(15) NOT NULL,
+ PRIMARY KEY(id)
+ ) ENGINE=MyISAM;
 
+ CREATE TABLE TESTMEMORY (
+ id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+ username VARCHAR(15) NOT NULL,
+ PRIMARY KEY(id)
+ ) ENGINE=MEMORY;
 
-
-
-
-
-
-
-
-
+ CREATE TABLE employees (
+ id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+ firstname VARCHAR(25) NOT NULL,
+ lastname VARCHAR(25) NOT NULL,
+ email VARCHAR(45) NOT NULL,
+ phone VARCHAR(10) NOT NULL,
+ PRIMARY KEY(id)
+ );
+  CREATE TABLE employees (
+ id TINYINT UNSIGNED NOT NULL primary key AUTO_INCREMENT,
+ firstname VARCHAR(25) NOT NULL,
+ lastname VARCHAR(25) NOT NULL,
+ email VARCHAR(45) NOT NULL,
+ phone VARCHAR(10) NOT NULL,
+ );
+  CREATE TABLE IF NOT EXISTS employees (
+ id TINYINT UNSIGNED NOT NULL primary key AUTO_INCREMENT,
+ firstname VARCHAR(25) NOT NULL,
+ lastname VARCHAR(25) NOT NULL,
+ email VARCHAR(45) NOT NULL,
+ phone VARCHAR(10) NOT NULL
+ );
