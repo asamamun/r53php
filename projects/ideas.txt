@@ -33,6 +33,9 @@ A website that uses computer vision to analyze images and recommend similar prod
 A website that uses deep learning to generate personalized meal plans
 I hope these ideas are more unique and useful for you. Remember, you could always combine some of these ideas together or take an existing idea and put a spin on it.
 
+social network for students with student portfolio
+audio library
+
 
 
 

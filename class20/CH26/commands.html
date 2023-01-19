@@ -1,0 +1,41 @@
+<h1>Change mysql password</h1>
+<p>menu: user accounts > select edit priviledges of root account, change password</p>
+<p>go to phpmyadmin folder in xampp. edit config.inc.php change password</p>
+
+<h1>Create user</h1>
+<pre>
+    <code>
+CREATE USER user [IDENTIFIED BY [PASSWORD] 'password']
+ [, user [IDENTIFIED BY [PASSWORD] 'password']] ...
+    </code>
+</pre>
+<p>create user idb identified by 'secret';</p>
+<p>create user idb@localhost identified by 'secret';</p>
+<h1>Granting Privileges</h1>
+<pre>
+    <code>
+GRANT privilege_type [(column_list)] [, privilege_type [(column_list)] ...]
+ ON {table_name | * | *.* | database_name.*}
+ TO user_name [IDENTIFIED BY 'password']
+ [, user_name [IDENTIFIED BY 'password'] ...]
+ [REQUIRE {SSL|X509} [ISSUER issuer] [SUBJECT subject]]
+ [WITH GRANT OPTION]
+    </code>
+</pre>
+<p>grant all privileges on r53_php.* to 'gnsl'@'localhost' identified by 'admin';</p>
+<p>grant select, insert on sakila.* to idb@localhost;</p>
+<h1>Revoking Privileges</h1>
+<pre>
+    <code>
+REVOKE privilege_type [(column_list)] [, privilege_type [(column_list)] 
+...]
+ ON {table_name | * | *.* | database_name.*}
+ FROM user_name [, user_name ...]
+    </code>
+</pre>
+<p>revoke all privileges on r53_php.* FROM 'gnsl'@'localhost';</p>
+<p>
+    FLUSH PRIVILEGES;
+</p>
+<h1>Deleting a User</h1>
+<p> drop user 'jason'@'localhost';</p>
