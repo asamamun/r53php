@@ -1,0 +1,17 @@
+
+.card-img-top{
+    height: 300px !important;
+    object-fit: cover;
+    transition: 1s;
+
+}
+.cardsimg{
+    overflow: hidden;
+}
+.card-img-top:hover{
+transform: scale(1.5);
+}
+
+.topp{
+    margin-top: 200px !important;
+}
