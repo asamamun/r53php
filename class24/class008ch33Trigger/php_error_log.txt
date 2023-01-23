@@ -1,0 +1,7 @@
+[14-Oct-2019 16:04:44 Asia/Dhaka] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'r33_mysql' in D:\xampp728\htdocs\r41A\PHP\Classes\Class29Trigger\class008ch33Trigger\database.php on line 2
+[14-Oct-2019 16:04:44 Asia/Dhaka] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\xampp728\htdocs\r41A\PHP\Classes\Class29Trigger\class008ch33Trigger\database.php on line 3
+[14-Oct-2019 16:04:44 Asia/Dhaka] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\xampp728\htdocs\r41A\PHP\Classes\Class29Trigger\class008ch33Trigger\Integrating Triggers into Web Applications.php on line 44
+[14-Oct-2019 16:04:44 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on null in D:\xampp728\htdocs\r41A\PHP\Classes\Class29Trigger\class008ch33Trigger\Integrating Triggers into Web Applications.php:45
+Stack trace:
+#0 {main}
+  thrown in D:\xampp728\htdocs\r41A\PHP\Classes\Class29Trigger\class008ch33Trigger\Integrating Triggers into Web Applications.php on line 45

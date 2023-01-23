@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>ABS</li>
+        <li>AVG</li>
+        <li>CEIL</li>
+        <li>COUNT**</li>
+        <li>FLOOR</li>
+        <li>GREATEST</li>
+        <li>LEAST</li>
+        <li>MAX <br>SELECT MAX(`price`) as most_expensive FROM `products` WHERE 1;</li>
+        <li>MIN <br>SELECT min(`price`) as most_cheap FROM `products` WHERE 1;</li>
+        <li>ROUND</li>
+        <li>SUM <br>SELECT sum(`price`) FROM `products` WHERE 1;</li>
+        <li>CURRENT_TIMESTAMP</li>
+        <li>DATE</li>
+        <li>MONTH</li>
+        <li>YEAR <br>
+            SELECT * FROM `rental` WHERE YEAR(`rental_date`)=2005; <br>
+            SELECT * FROM `rental` WHERE YEAR(`rental_date`) !=2005; <br>
+            SELECT * FROM `rental` WHERE YEAR(`rental_date`) =2005 and MONTH(`rental_date`)="05"; <br>
+        </li>
+        <li>CONCAT <br> SELECT * , CONCAT(`first_name`,' ',`last_name`) as `Full Name` FROM `actor` WHERE 1</li>
+    </ul>
+    <h3>cheapest 5 products</h3>
+    select * from products where 1 order by price limit 5;
+    <h3>expensive top 5 products</h3>
+    select * from products where 1 order by price desc limit 5;
+</body>
+</html>

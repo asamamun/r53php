@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A primary key is used to ensure data in the specific column is unique. </h1>
+    <h1> A foreign key is a column or group of columns in a relational database table that provides a link between data in two tables. It uniquely identifies a record in the relational database table.</h1>
+
+    <h1>add foreign key mysql with alter</h1>
+    <p>
+        ALTER TABLE posts
+        ADD CONSTRAINT fk_userid
+         FOREIGN KEY (user_id) REFERENCES users(id);
+    </p>
+    <p>
+        ALTER TABLE marks
+        ADD CONSTRAINT fk_studentid
+        FOREIGN KEY (student_id) REFERENCES students(id) on delete cascade;
+    </p>
+    <p>
+        ALTER TABLE posts
+
+        ADD FOREIGN KEY (user_id) REFERENCES users(id) on delete cascade;
+    </p>
+    <h1>delete foreign key</h1>
+    ALTER TABLE posts DROP FOREIGN KEY user_id; <br>
+    ALTER TABLE posts
+drop CONSTRAINT fk_userid; <br>
+
+
+
+
+</body>
+</html>

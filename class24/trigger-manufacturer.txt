@@ -1,0 +1,6 @@
+CREATE TRIGGER ad_delete_manu
+AFTER DELETE ON manufacturer
+FOR EACH ROW
+BEGIN
+DELETE FROM product  WHERE manufacturer_id=OLD.id;
+END;//

@@ -1,0 +1,42 @@
+CREATE TABLE `technicians` (
+  `id` int(5) NOT NULL primary key auto_increment,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `available` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `technicians` (`id`, `name`, `email`, `available`) VALUES
+(1, 'imam', 'imam@gmail.com', 1),
+(2, 'misti', 'misti@gmail.com', 1),
+(3, 'mahbub', 'mahbub@gmail.com', 0),
+(4, 'UnAssigned', 'admin@gmail.com', 1);
+
+CREATE TABLE `tickets` (
+  `id` int(5) NOT NULL primary key auto_increment,
+  `username` varchar(60) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `description` varchar(200) NOT NULL,
+  `tech_id` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `tickets` (`id`, `username`, `title`, `description`, `tech_id`) VALUES
+(1, 'Mr Noodles', 'monitor prob', 'dekha jay na', '1'),
+(2, 'Mr kazi vai', 'Printer problem', 'paper feed problem', '1'),
+(3, 'Mr Mango', 'Projector hazy', 'jhapsa ase', '1'),
+(4, 'Mr Imran ', 'Walton mobile problem', 'Call problem', '1'),
+(5, 'aa', 'phone prob', 'phone prob desc', '1'),
+(6, 'bb', 'mouse problem', 'double click not working', '2'),
+(7, 'mahbub 2', 'hard disk not working', 'hard disk not found', '2'),
+(8, 'Imran dhanmondi', 'electric shock', 'pc is giving me shock', '2');
+
+
+CREATE TRIGGER au_reassign_ticket
+AFTER UPDATE ON technicians
+FOR EACH ROW
+BEGIN
+IF NEW.available = 0 THEN
+UPDATE tickets SET tech_id=0 WHERE tech_id=NEW.id;
+ELSEIF NEW.available = 1 THEN
+UPDATE tickets SET tech_id=new.id WHERE tech_id=0;
+END IF;
+END;//
