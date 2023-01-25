@@ -35,6 +35,9 @@ I hope these ideas are more unique and useful for you. Remember, you could alway
 
 social network for students with student portfolio
 audio library
+multiblog
+ecommerce
+product reviwe site
 
 
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>virtual table or view consists of a set of rows that is returned if a 
+        particular query is executed.</h1>
+        <h3>advantages of view</h3>
+        <ul>
+            <li>Simplicity</li>
+            <li>Security</li>
+            <li>Maintainability</li>
+        </ul>
+        <h3>view syntax</h3>
+        <pre>
+            <code>
+CREATE
+ [OR REPLACE]
+ [ALGORITHM = {MERGE | TEMPTABLE | UNDEFINED }]
+ [DEFINER = { user | CURRENT_USER }]
+ [SQL SECURITY { DEFINER | INVOKER }]
+ VIEW view_name [(column_list)]
+ AS select_statement
+ [WITH [CASCADED | LOCAL] CHECK OPTION]
+            </code>
+        </pre>
+        <hr>
+        <h4>example</h4>
+        <pre>
+            <code>
+CREATE VIEW employee_contact_info_view AS
+ SELECT first_name, last_name, email, phone
+ FROM employees ORDER BY last_name ASC;
+
+ This view can then be called like so:
+SELECT * FROM employee_contact_info_view;
+            </code>
+        </pre>
+create view three_hours_long_movies as select * from film where length>=180;
+create view payment_gt_10 as select * from payment where amount>=10;
+
+create view payment_gt_10 as (select * from payment  where amount>=10) with local check option ;
+
+        <h1>delete view</h1>
+        <code>
+            drop view three_hours_long_movies;
+        </code>
+
+        select * from three_hours_long_movies where rating='G';
+
+    <h1>
+        Create view:
+        <ul>
+            <li>
+                create a view for payment table where amount is less than 1. 
+            </li>
+            <li>
+                create a view to show films with rating "G" or "PG";
+            </li>
+            <li>
+                create a view to show the cities of spain from country and city table
+                <br>
+                <p>Inner Join : 
+                    <pre>
+<code>    
+    SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+</code>
+</pre>
+<hr>
+<pre>
+<code>
+select country.*,city.*
+from country
+inner join city
+on country.country_id = city.country_id
+where country.country = "Spain";
+
+create view ct_spain_cities as 
+select country.country, city.city
+from country
+inner join city
+on country.country_id = city.country_id
+where country.country = "Spain";
+</code>
+</pre>
+
+                </p>
+            </li>
+            <li>
+                create a view to show country names and city names from country and city table.(only country and city columns) <br>
+                create view ct_country_cities as 
+select country.country, city.city
+from country
+inner join city
+on country.country_id = city.country_id;
+            </li>
+            <li>
+                create a view to show only horror films.
+
+                select film.*, category.*,film_category.*
+                from film,category,film_category
+                where film.film_id=film_category.film_id and category.category_id = film_category.category_id
+
+
+                select film.title, category.name
+                from film,category,film_category
+                where film.film_id=film_category.film_id and category.category_id = film_category.category_id
+
+                select film.title, category.name
+                from film,category,film_category
+                where film.film_id=film_category.film_id and category.category_id = film_category.category_id and category.category_id=11;
+
+                select film.title, category.name
+                from film,category,film_category
+                where film.film_id=film_category.film_id and category.category_id = film_category.category_id and category.name="Horror";              
+
+            </li>
+
+
+        </ul>
+
+        <h1>left join example</h1>
+        <p>
+            <pre>
+                SELECT country.country,city.city
+FROM country
+LEFT JOIN city
+ON country.country_id = city.country_id;
+            </pre>
+        </p>
+    </h1>
+</body>
+</html>

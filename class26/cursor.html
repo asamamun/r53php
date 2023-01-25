@@ -1,0 +1,47 @@
+<pre>
+//update products set price = price+10;
+//update products set newprice = price+10;
+
+
+ < 1000 , 10%
+ <10000 , 12%
+ <100000, 15%
+ <1000000, 20%,
+ >1000000, 0%
+
+
+CREATE PROCEDURE calculate_newprice()
+BEGIN
+DECLARE pid INT;
+ DECLARE pprice DECIMAL(10,2);
+ DECLARE newp DECIMAL(10,2);
+ DECLARE done INT;
+ DECLARE update_price CURSOR FOR SELECT id, price FROM products;
+ DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+ OPEN update_price;
+ begin_calc: LOOP
+ FETCH update_price INTO pid, pprice;
+ IF done THEN
+ LEAVE begin_calc;
+ END IF;
+ IF pprice < 1000.00 THEN
+ set newp = pprice + pprice*0.10;
+ ELSEIF pprice < 10000.00 THEN
+ set newp = pprice + pprice*0.12;
+ elseif pprice < 100000.00 THEN
+ set newp = pprice + pprice*0.15;
+ elseif pprice < 1000000.00 THEN
+ set newp = pprice + pprice*0.20;
+ else
+ set newp = pprice;
+ END IF; 
+ update products set newprice = newp where id=pid;
+ END LOOP begin_calc;
+ CLOSE update_price;
+END
+//
+
+</pre>
+
+
+

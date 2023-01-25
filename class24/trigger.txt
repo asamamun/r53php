@@ -40,3 +40,4 @@ ELSEIF NEW.available = 1 THEN
 UPDATE tickets SET tech_id=new.id WHERE tech_id=0;
 END IF;
 END;//
+
