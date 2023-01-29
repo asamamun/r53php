@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>start transaction</li>
+        <li>commit</li>
+        <li>rollback</li>
+    </ol>
+    <ol>
+        <li>
+            autocommit(0)
+        </li>
+        <li>commit()</li>
+        <li>rollback()</li>
+    </ol>
+    <pre>
+CREATE TABLE participants (
+ id SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(35) NOT NULL,
+ email VARCHAR(45) NOT NULL,
+ cash DECIMAL(5,2) NOT NULL
+ ) ENGINE=InnoDB;
+    </pre>
+    <hr>
+    <pre>
+CREATE TABLE trunks (
+ id SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ owner SMALLINT UNSIGNED NOT NULL REFERENCES participants(id),
+ name VARCHAR(25) NOT NULL,
+ price DECIMAL(5,2) NOT NULL,
+ description MEDIUMTEXT NOT NULL
+ ) ENGINE=InnoDB;
+    </pre>
+    <p>INSERT INTO participants SET name="Jason", email="jason@example.com",
+        cash="100.00";</p>
+    <p>INSERT INTO participants SET name="Jon", email="jon@example.com",
+        cash="150.00";</p>
+        <p>
+            mysql>INSERT INTO trunks SET owner=2, name="Abacus", price="12.99",
+ description="Low on computing power? Use an 
+abacus!";
+mysql>INSERT INTO trunks SET owner=2, name="Magazines", price="6.00",
+ description="Stack of computer magazines.";
+mysql>INSERT INTO trunks SET owner=1, name="Used Lottery ticket", 
+price="1.00",
+ description="Great gift for the eternal 
+optimist.";
+        </p>
+</body>
+</html>
