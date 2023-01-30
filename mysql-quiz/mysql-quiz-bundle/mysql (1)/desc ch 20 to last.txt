@@ -1,0 +1,76 @@
+20:Web Service
+1. What is web service? What are the possibilities of web service.
+2. Discuss RSS and Magpie Rss.
+3.Function: simplexml_load_file(),attributes(),children(), xpath().
+4. Discuss SOAP.
+CHAPTER 21: SECURE PHP PROGRAMMING
+1. Discuss Safe Mode in PHP.
+2. Name 10 functions that are affected by safe mode.
+3. Discuss cross side scripting.
+4. Name the four standard functions that are used to sanitize user input.
+5. Discuss htmlentities() and strip_tags().
+6.Define data encryption. Discuss MD5, sha1 and mhash functions.
+CHAPTER 22: SQLITE
+1. Point the features of SQLITE.
+2. Functions: sqlite_open(),sqlite_popen(),sqlite_close(), sqlite_query(),sqlite_fetch_array(),sqlite_array_query(),sqlite_num_rows()
+CHAPTER 24: INTRODUCING MYSQL
+1. What Makes MySQL So Popular?
+2. Name the features of MYSQL 5. What are the limitations of MYSQL version 4
+3. Discuss max_connections,port.
+CHAPTER 26 THE MANY MYSQL CLIENTS:
+1. Discuss SHOW databases;USE mysql;SHOW TABLES;DESCRIBE host;SELECT Host, User, password FROM user ORDER BY Host;SHOW VARIABLES;SHOW STATUS;
+2. From command prompt how to connect to mysql. Write the code.
+3. Name the Third-Party Client Programs for MYSQL. Discuss phpMyAdmin.
+CHAPTER 27: MYSQL STORAGE ENGINES AND DATATYPES
+1. Name the storage engines available in mysql. Discuss any two.
+2. Whats the difference between InnoDB and myISAM storage engine.
+3. Discuss the features of MEMORY, BDB, BLACKHOLE.
+4. Name the date and time dayatypes.
+5. Name the Numeric Datatypes for mysql. Also write the unsigned range for each datatype.
+6. What are the data types available for floating point.
+7. Name the string data types and their length.
+8. What are the Datatype Attributes available in mysql.
+CHAPTER 28: SECURING MYSQL
+1. What is authentication and authorization.
+2. What are the information needed to connect to a mysql database.
+3. Write the general syntax to create and drop user.
+4. Write the syntex of grant and revoke command.
+CHAPTER 29: PHP’S MYSQL EXTENSION
+1. functions: mysql_connect(),mysql_pconnect(),mysql_close(), mysql_select_db(), mysql_query(),mysql_db_query(),
+2. mysql_result(), mysql_fetch_row(), mysql_fetch_array(), mysql_fetch_object()
+3. mysql_num_rows(),mysql_affected_rows()
+4. mysql_error(),mysql_errno(),mysql_real_escape_string()
+CHAPTER 30: PHP’S MYSQLI EXTENSION
+1. Features of MYSQLI extension.
+2. mysqli_connect(),mysqli_connect_error(),mysqli_connect_errno(),mysqli_select_db,mysqli_close(),mysqli_query(),mysqli_free_result,mysqli_result store_result,mysqli_fetch_array(),mysqli_fetch_object(),mysqli_fetch_row()
+
+CHAPTER 31: STORED ROUTINES
+1. What is stored routine.
+2. What are the advantages of stored routine.
+3. What are the disadvantages of stored routine.
+4. How MySQL Implements Stored Routines.
+5. How to Create a Stored Routine.
+
+CHAPTER 32: MYSQL TRIGGERS
+1. Why Use Triggers?
+2. Discuss Before Triggers vs. After Triggers.
+3. How to Create, modify, delete a Trigger.
+
+CHAPTER 33: VIEWS
+1. What is view? What is the advantages of using view.
+2. How to create, modify, delete view?
+
+CHAPTER 34: PRACTICAL DATABASE QUERIES
+1. What is Cursors.
+CHAPTER 35 INDEXES AND SEARCHING
+1. What is an index, Normal Indexes,Multiple-Column Normal Indexes.
+2. What is Full-Text Indexes.
+3. What is full text search.
+CHAPTER 36: TRANSACTIONS
+1. What’s a Transaction?
+2. Discuss the transaction process in mysql.
+CHAPTER 37: IMPORTING AND EXPORTING DATA
+1. How to import and export data in mysql.
+2. How to export daya in excel.
+3. What are the formats available for inport and export data in mysql.
+

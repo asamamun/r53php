@@ -1,0 +1,22 @@
+<pre>
+    CREATE TABLE ch35_sales (
+ id SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ client_id SMALLINT UNSIGNED NOT NULL,
+ order_time TIMESTAMP NOT NULL,
+ sub_total DECIMAL(8,2) NOT NULL,
+ shipping_cost DECIMAL(8,2) NOT NULL,
+ total_cost DECIMAL(8,2) NOT NULL
+);
+</pre>
+sales.csv
+<pre>
+    12309,45633,2010-12-19 01:13:42,22.04,5.67,27.71\n
+    12310,942,2010-12-19 01:15:12,11.50,3.40,14.90\n
+    12311,7879,2010-12-19 01:15:22,95.99,15.00,110.99\n
+    12312,55521,2010-12-19 01:30:45,10.75,3.00,13.75\n
+</pre>
+<hr>
+<pre>
+LOAD DATA INFILE 'D:/xampp8110/htdocs/Round53/php/r53php/class28-import-export/sales.csv' INTO TABLE r53_php.ch35_sales FIELDS TERMINATED BY ',' ESCAPED BY '\\'  LINES TERMINATED BY '\n';
+
+</pre>

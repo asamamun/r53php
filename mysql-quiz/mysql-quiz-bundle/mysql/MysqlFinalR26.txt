@@ -1,0 +1,245 @@
+1.Mysql is a Relational Database
+A.True  B. False                 
+2.Which of the following are MySql Features?
+A.Replication	B.Query Caching
+C.Storage		D.Security
+3.What are the MySql License Options?
+A.MySql Open Source License
+B.MySql Personal Edition License
+C.Commercial License
+D.Enterprise Edition License
+4.Which of the following are MySql 5.0 Features?
+A.Complete Foreign key Support
+B.Stored Procedure Support
+C.Integrated Report support
+D.Batch Query Support
+5.What are the storage engine of MySql?
+A.HDD	B.InnoDB
+C.MyISM	D.Backup
+6.How to set the administrator password?
+A.SET ADMINISTRATOR FOR root@localhost=PASSWORD('secret'); 
+B.SET ROOT PASSWORD  FOR root@localhost=PASSWORD('secret');
+C.SET PASSWORD FOR root@localhost=PASSWORD('secret');
+D.SET PASSWORD FOR Admininstrator@localhost=PASSWORD('secret');
+7.Which of the following are true about MySqL Client?
+A.capable of managing almost every conceivable aspect of a MySQL server, including creating, modifying, and deleting tables and databases
+B.Capable of Database backup, Restore etc.
+C.Viewing Configuration Variables and System Status
+8.Which command use to view all the tables?
+A.View Tables	B.Show Tables
+C.Display Tables
+9.To view a list of all existing databases
+A.View Databases	B.Show Databases
+C.Display Databases
+10.How to view the structure of one of those tables?
+A.Structure Student
+B.Display student
+C.Describe student
+D.View Student
+11.MySQL’s storage engines, namely 
+A.ARCHIVE	B.Index
+C.XLS, 		D.InnoDB
+E.MyISAM.
+12.A relational database  ___________ is a data structure used to store and organize information.
+A.View	B.Table
+C.ReportD.Stored Procedure
+13.MyISAM tables handle transactions, meaning that you should use this type for all 
+of your transactional needs, so as not to incur the extra overhead required of transactional.
+A.True	B.False
+14.Which command use to view storage engine list?
+A.View Engine
+B.Show Storage
+C.Show Engine
+15.How Do I Convert ISAM Tables to MyISAM Tables?
+A.MODIFY TABLE table_name TYPE=MYISAM;
+B.ADD  TABLE table_name TYPE=MYISAM;
+C.ALTER TABLE table_name TYPE=MYISAM;
+16.What is the maximum size of the VARCHAR Column type?
+A.255 Byte
+B.255 Characters
+C.512 Byte
+D.512 Characters
+17.How the Privilege System Works?
+A.Authentication
+B.Grant
+C.Revoke
+D.Authorization
+18.___________Determines whether a user is even allowed to connect to the server.
+A.Authentication 
+B.Authorization
+19.Where Is Access Information Stored?
+A.MySQL Datbase
+B.User Database
+C.User Define Database
+20.Which mysql command use to drop a user?
+A.DROP  from user jason@localhost;
+B.Delete from  user jason@localhost;
+C.Delete user jason@localhost;
+D.DROP user jason@localhost;
+21.Which mysql command use to rename user?
+A.CHANGE USER jason@localhost TO jasongilmore@localhost 
+B.RENAME  USER jason@localhost;
+C.RENAME USER jason@localhost TO jasongilmore@localhost 
+22.What are the key features of MySql extension?
+A.Object oriented:
+B.T Embedded Client support
+C.Transactional support:
+23.Which Method use to select MySql Database?
+A.mysqli__db (mysqli link, string dbname)
+B.mysqli_select_database (mysqli link, string dbname)
+C.mysqli__database (mysqli link, string dbname)
+D.mysqli_select_db (mysqli link, string dbname)
+24.Which function is responsible for closing the connection?
+A.mysql_Exit (mysqli link)
+B.mysql_close (mysqli link)
+C.mysql_Nothing (mysqli link)
+25.What is the diference between mysqli_fetch_object (mysqli_result result) and mysqli_fetch_array (mysqli_result result)?
+A.mysqli_fetch_object  except that an object is returned rather than an array.
+B.Both Function are similar
+C.mysqli_fetch_object  except that an any value is returned rather than an array.
+26.commit method commits the present transaction to the database, returning TRUE on success and FALSE otherwise. 
+A.True B. False
+27.A set of SQL statement stored in the database and executed by calling an assigned name within a query in known as What?
+A.Stored Routine
+B.Stored Function
+C.Stored Tables
+D.View
+28.Stored routines have a number of advantages
+A.Consistency
+B.Performance
+C.Reference integrity
+D.Security
+29.MySQL actually implements two procedural variants, which are collectively referred to as stored routines are
+A.Stored Function
+B.Trigger
+C.Views
+D.Stored Procedure
+30.Which stored Routine  support execution of SQL commands such as SELECT, INSERT, UPDATE, and DELETE?
+A.Stored Function
+B.Trigger
+C.Views
+D.Stored Procedure
+31.How to create a stored Routine?
+A.CREATE Stored Routine get_inventory()
+Select * from Student
+B.CREATE PROCEDURE get_inventory()
+Select * from Student
+C.CREATE Routine  get_inventory()
+Select * from Student
+D.Make  PROCEDURE get_inventory()
+Select * from Student
+32.Which of the following statement is true about trigger?
+A.A trigger is a task that executes in response to some predetermined event
+B.A set of SQL statement stored in the database and executed by calling an assigned name
+C.consists of a set of rows that is returned if a particular query is executed
+33.A After trigger shouldn’t be used to enforce propagation or referential integrity, because it’s possible that other before triggers could execute after it.
+A.True B. False 
+34.Which command produces several attributes for a trigger or set of triggers?
+A.SHOW TRIGGERS
+B.VIEW TRIGGERS
+C.DISPLAY TRIGGERS
+35.Which statement use to delete triggers?
+A.DROP TRIGGER table_name.trigger_name
+B.TRIGGER table_name.trigger_name
+C.DELETE TRIGGER table_name.trigger_name 
+36.Which of the following statement is correct?
+A.Views are supported: A trigger can be used in conjunction with a view.
+B.Transactions are not supported: A trigger can’t be involved in the beginning or conclusion of a transaction.
+C.Result sets can be returned from a trigger:
+37.Which of the following statement is true about View?
+A.A View is a task that executes in response to some predetermined event
+B.A set of SQL statement stored in the database and executed by calling an assigned name
+C.consists of a set of rows that is returned if a particular query is executed
+38. What are the advantageous of View?
+A. Simplicity
+B. Security
+C. Performance
+D. Transaction
+39. Which of the following example of creating a view?
+A. Make A  VIEW employee_contact_info_view AS
+  SELECT first_name, last_name, email, phone  FROM employee ORDER BY last_name ASC;
+B.	CREATE VIEW employee_contact_info_view AS
+ SELECT first_name, last_name, email, phone  FROM employee ORDER BY last_name ASC;
+C.	CREATE employee_contact_info_view  from 
+ SELECT first_name, last_name, email, phone FROM employee ORDER BY last_name ASC;
+40. Which statement use to show the view structure?
+A. DISPLAY  employee_contact_info_view;
+B. DESC employee_contact_info_view;
+C. DESCRIBE employee_contact_info_view;
+41. WITH CHECK OPTION clause will prevent any subsequent view update from changing any value in the column to anything other than Columbus.
+A. True B. False
+42.Which of the following statement are correct?
+A.The SQL subquery is a separate SELECT statement that is embedded in the main statement and may be executed once for each row of the result set.
+B.cursor, such as its scrolling behavior and the query used to build the result set on which the cursor operates
+C.MySQL’s database indexing and full-text search capabilities, and shows you how to execute Web-based database searches using PHP
+D.All of Them
+43.How to create a cursor?
+A.Create cursor_name CURSOR FOR select_statement
+B.DECLARE cursor_name CURSOR FOR select_statement 
+C.cursor_name CURSOR FOR select_statement
+D.DECLARE  CURSOR  cursor_name  FOR select_statement
+44.For example, to limit returned query results to just the first five rows, construct the following query:
+A.SELECT name, price FROM product ORDER BY name ASC MIN 5;
+B.SELECT name, price FROM product ORDER BY name ASC LIMIT 5, 15;
+C.SELECT name, price FROM product ORDER BY name ASC LIMIT 5;
+D.SELECT name, price FROM product ORDER BY name ASC LIMIT 5,0;
+45._____________________ is essentially an ordered (or indexed) subset of table columns, with each row entry pointing to its corresponding table row
+A.View  B. An index C. Stored Routine D. Trigger      
+46.What are the Advantages of MySql Database Index?
+A.Uniquness
+B.Query Optimization
+C.Text Searching
+D.Database table search
+47.Which of the following statement is true about Transaction?
+A.A View is a task that executes in response to some predetermined event
+B.A set of SQL statement stored in the database and executed by calling an assigned name
+C.consists of a set of rows that is returned if a particular query is executed
+D.A transaction is an ordered group of database operations that are perceived as a single unit
+48.What is the  four pillars of the transactional process ?
+A.Performance    B. Atomicity C. Consistency D.Isolation E.Durability
+49.Which statement, a command that is executed much like a query is executed within the mysql client, is used to import delimited text files into a MySQL table?
+A.LOAD DATA INFILE
+B.IMPORT DATA INFILE
+C.DATA INFILE
+D.ADD DATA INFILE
+50.Which SQL statement is actually a variant of the SELECT query. It’s used when you want to direct query output to a text file?
+A.QUERY  INTO OUTFILE   B . ADD INTO OUTFILE C. INTO OUTFILE  D. SELECT INTO OUTFILE
+51.The ________________is really just a command-line version of the LOAD DATA INFILE SQL query.
+A.mysqlimport client  B. SELECT INTO OUTFILE C. LOAD DATA INFILE
+52.Which of the following statement is true about Web Services?
+A.Web Service is a network service to support interoperable machine-to-machine interaction over a network
+B.Web Service is a mailing systems to send a mail  over a network
+C.Web Service is a software system designed to support interoperable machine-to-machine interaction over a network
+53.RSS offers a formalized means for encapsulating a Web site’s content within an XML-based structure, known as a feed
+A.True  B. False
+54.XML document is stored in a variable, which function  use to read it into the object?
+A.simplexml_load_string()
+B.simplexml_load()
+C.xml_load_string()
+D.load_string()
+55.to retrieve the XML Attributes?
+A.Use attributes() method 
+B.Use element() Method
+C.Use root() Method
+56.FTP  is a lightweight protocol intended for exchanging structured information in  decentralized, distributed environment
+A.True B. False   
+57.Which function offers a great tool for viewing a summary of PHP’s configuration on a given server?
+A.The phpinfo()
+B.The info()
+C.The ApachiInfo()
+58.__________can be defined as the translation of data into a format that is intended to be unread able by anyone except the intended party.
+A.Encryption 
+B.Decryption
+59.Which algorithm can also be used as a password verification system?
+A.Encryption
+B.MD5
+C.MHash
+60.Which data encryption package providing support for two-way encryption?
+A.MD5
+B.MHash
+C.Mcrypt
+D.Dcript
+61.The ______________function encrypts data, returning the encrypted result?
+A.mcrypt_encrypt()
+B.encrypt()
+C.mcrypt()

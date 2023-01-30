@@ -1,0 +1,9 @@
+CREATE PROCEDURE  `manufact`
+(
+IN name VARCHAR(50),
+IN address VARCHAR(100),
+IN contact VARCHAR(50)
+)
+BEGIN
+insert into manufacturer values('',name,address,contact);
+END//

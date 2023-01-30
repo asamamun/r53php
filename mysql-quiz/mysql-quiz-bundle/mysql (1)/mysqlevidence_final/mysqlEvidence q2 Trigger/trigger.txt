@@ -1,0 +1,6 @@
+CREATE TRIGGER log_manu_del AFTER DELETE on manufacturer
+FOR EACH ROW
+BEGIN
+DELETE FROM product
+    WHERE product.manufacturer_id = old.id;
+END//
