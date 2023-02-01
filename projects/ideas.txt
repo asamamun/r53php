@@ -38,6 +38,88 @@ audio library
 multiblog
 ecommerce
 product reviwe site
+A recipe website that allows users to search for recipes based on ingredients, dietary restrictions, and other criteria.
+A booking and scheduling system for appointments or reservations, such as a website for scheduling appointments with a doctor or reserving a rental property.
+
+SMS: school management system
+
+
+admin module
+______________
+session: 2023
+branch: pallabi, dhanmondi,....
+class:
+shift:
+section:
+student admision:info, mobile()
+teacher management
+parents info: user, pass
+
+parents module
+______________
+location tracking
+
+
+teachers module:
+________________
+student ateendance
+exam/quiz management
+
+
+audio library
+multiblog
+ecommerce
+e-ticketing
+AirBnB
+Account Inventory
+Store Inventory
+
+
+multiblog
+ecommerce
+Profile Checker(with events) and google ads
+
+
+module(user/admin)
+User:
+registration
+login
+select category
+view products
+add products to cart
+add products to wishlist
+view previous ordered products
+can share products to social media(shareThis)
+review and rate products
+
+Admin:
+login
+will manage: 
+-category
+-products
+-users
+-orders
+reports:
+-monthly report
+-daily report
+-porduct report
+-wishlist report
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

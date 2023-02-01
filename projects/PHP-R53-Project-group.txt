@@ -1,0 +1,87 @@
+
+*************************
+	Group-hackers
+	Blood/organ Donation Portal
+*************************
+1. Moshiur
+2. Jalal
+3. Mohim
+admin can:
+login
+manage division,district,thana
+manage bloodgroup
+manage users
+message users
+manage latest news
+manage category
+manage latest posts
+manage carousel
+
+user can:
+register
+login
+donate organ
+donate blood
+find organ/blood
+
+can post articles
+can view articles
+
+
+
+*************************
+	Group-tigers
+	College Management System
+*************************
+1. Sharif
+2. Ismail
+3. Sayeed
+
+
+
+
+*************************
+	Group-lions
+	Project - Single Vendor Ecommerce
+*************************
+1. Mostak
+2. Ishrat
+3. Ruma
+
+module(user/admin)
+User:
+registration
+login
+select category
+view products
+add products to cart
+add products to wishlist
+view previous ordered products
+can share products to social media(shareThis)
+review and rate products
+
+Admin:
+login
+will manage: 
+-category
+-products
+-users
+-orders
+-carousel
+reports:
+-monthly report
+-daily report
+-porduct report
+-wishlist report
+
+
+*************************
+	Group-eagle
+	BD Meet Hub
+	meethubd.com
+*************************
+
+1. Sohan
+2. Marzan
+3. Lipi
+4. Rashed
