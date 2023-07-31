@@ -3,7 +3,7 @@
 <?php
 use SimplePie\SimplePie;
 $s = new SimplePie();
-$s->set_feed_url(["https://prod-qt-images.s3.amazonaws.com/production/prothomalo-bangla/feed.xml","https://samakal.com/rss"]);
+$s->set_feed_url(["https://prod-qt-images.s3.amazonaws.com/production/prothomalo-bangla/feed.xml","https://samakal.com/rss","http://feeds.bbci.co.uk/news/science_and_environment/rss.xml"]);
 $s->init();
 // var_dump($s->get_items());
 ?>

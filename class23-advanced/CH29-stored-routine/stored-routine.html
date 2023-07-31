@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Creating a Stored Routine</h1>
     <p>The following syntax is available for creating a stored procedure:</p>
@@ -26,21 +28,48 @@ CREATE
     </pre>
 
     <h1>create category using stored routine</h1>
-<code>
+    <code>
     create procedure add_cat(IN n varchar(60),IN d varchar(512),IN i varchar(60))
     begin
     insert into categories values(null,n,d,i,current_timestamp());
     end//
 </code>
-calling procedure
-<code>
+    calling procedure
+    <code>
     call add_cat("Books","All types of books","books.png");
 </code>
 
-<h1>CW:Create a stored function for products table and use it to insert values from the form</h1>
+    <h1>CW:Create a stored function for products table and use it to insert values from the form</h1>
 
-<h1>Employee bonus flat</h1>
-<p>SELECT empid,sum(`revenue`) as total,sum(`revenue`)*0.05 as bonus FROM `sales` group by `empid`;</p>
+    <h1>Employee bonus flat</h1>
+    <p>SELECT empid,sum(`revenue`) as total,sum(`revenue`)*0.05 as bonus FROM `sales` group by `empid`;</p>
 
+
+    <h1>individual if else bonus</h1>
+
+    /* CALCULATE BONUS */
+    CREATE FUNCTION calculate_bonus
+    (emp_id INT(5)) RETURNS DECIMAL(10,2)
+    COMMENT 'Calculate employee SALES bonus'
+    BEGIN
+    DECLARE total DECIMAL(10,2);
+    DECLARE bonus DECIMAL(10,2);
+    SELECT SUM(revenue) INTO total FROM sales WHERE EMPID = emp_id;
+    if total>=100000 then
+    SET bonus = total * .15;
+    elseif total>=50000 then
+    SET bonus = total * .1;
+    elseif total>=20000 then
+    SET bonus = total * .08;
+    else
+    SET bonus = total * .05;
+    end if;
+    RETURN bonus;
+    END;
+    //
+
+<hr>
+SELECT empid, sum(`revenue`) as totalsales, calculate_bonus(empid) as bonus FROM `sales` WHERE 1 GROUP by `empid`;
 </body>
+
 </html>

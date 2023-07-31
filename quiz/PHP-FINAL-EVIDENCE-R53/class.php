@@ -5,13 +5,13 @@ class Student{
     public $id;
     public $name;
     public $batch;
-    public $filearr;
+    static public $filearr;
     public function __construct()
     {
-        $this->filearr = file("student.txt");
+        self::$filearr = file("student.txt");
     }
     function result($id){
-        foreach($this->filearr as $line){
+        foreach(self::$filearr as $line){
             $parts  = explode(",",$line);
             if($parts[0] == $id){
                 echo "Student ID: " . $parts[0] . "<br>";

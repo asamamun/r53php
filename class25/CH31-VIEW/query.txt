@@ -1,0 +1,48 @@
+1. show all films with rating "PG"
+SELECT * FROM `film` WHERE `rating`="PG"
+2. show all short films(length < 60)
+SELECT * FROM `film` WHERE `length`<60
+3. show all japanese films
+select * from `film` where `language_id`='3'
+4. show all films with keyword "drama" in description
+SELECT * FROM `film` WHERE `description` like '%drama%'
+5. show all address from address table with city_id 300.
+select * from address where city_id='300'
+6. show city name with city id 300 from city table.
+select city from city where city_id=300
+7. show all action movies name.(category id =1)
+select * from film_category where category_id=1
+
+
+select a.title, b.category_id, c.name from film a, film_category b, category c where a.film_id = b.film_id and b.category_id = c.category_id and b.category_id=1
+
+select a.*, b.*, c.* from film a, film_category b, category c where a.film_id = b.film_id and b.category_id = c.category_id and b.category_id=1
+
+
+8. show the number of cities where country_id 103.
+select count(*) from city where country_id = 103
+
+9. show city names where country_id = 103
+select city from city where country_id=103
+
+ 
+10. show the total rent amount of customer 1 from payment.
+select customer_id, sum(amount) from payment where customer_id=1
+
+
+11. show all customers total rent.
+select customer_id, sum(amount) as total from payment group by customer_id order by total desc
+
+create view customer_total_payment_desc as
+select customer_id, sum(amount) as `totalamount` from payment group by customer_id order by totalamount desc
+
+12. show total payment for year 2005 and month 05
+select sum(amount) from payment where year(payment_date)=2005 and month(payment_date) = 05
+
+13. show total payment for year 2005, monthwise
+select month(payment_date) as month, sum(amount) from payment where year(payment_date)=2005 group by month(payment_date)
+
+14. show year names where payment has been made.
+select distinct(year(payment_date)) as year from payment where 1
+
+
